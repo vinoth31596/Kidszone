@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KdC-Yb-taH" customClass="CustomFilterCell" customModule="kidszone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="biC-gy-kLG">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jGy-WS-rf1">
+                                <rect key="frame" x="8" y="10" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CxJ-1w-SJH"/>
+                                    <constraint firstAttribute="width" constant="30" id="dNw-Ld-5Pu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKL-1p-p80">
+                                <rect key="frame" x="46" y="16.5" width="106" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EKL-1p-p80" firstAttribute="leading" secondItem="jGy-WS-rf1" secondAttribute="trailing" constant="8" id="2pl-dk-SOo"/>
+                            <constraint firstItem="jGy-WS-rf1" firstAttribute="leading" secondItem="biC-gy-kLG" secondAttribute="leading" constant="8" id="O2I-T8-idV"/>
+                            <constraint firstAttribute="width" constant="160" id="Y8z-Ym-eGo"/>
+                            <constraint firstAttribute="trailing" secondItem="EKL-1p-p80" secondAttribute="trailing" constant="8" id="axl-fM-06j"/>
+                            <constraint firstItem="jGy-WS-rf1" firstAttribute="top" secondItem="biC-gy-kLG" secondAttribute="top" constant="10" id="cR3-xC-n3O"/>
+                            <constraint firstAttribute="bottom" secondItem="jGy-WS-rf1" secondAttribute="bottom" constant="10" id="e0C-1p-6u6"/>
+                            <constraint firstItem="EKL-1p-p80" firstAttribute="centerY" secondItem="jGy-WS-rf1" secondAttribute="centerY" id="nd1-ZW-8C0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="biC-gy-kLG" secondAttribute="bottom" id="9K8-2u-2PS"/>
+                <constraint firstAttribute="trailing" secondItem="biC-gy-kLG" secondAttribute="trailing" id="Hb9-6K-fEm"/>
+                <constraint firstItem="biC-gy-kLG" firstAttribute="leading" secondItem="KdC-Yb-taH" secondAttribute="leading" id="RoP-9b-4JF"/>
+                <constraint firstItem="biC-gy-kLG" firstAttribute="top" secondItem="KdC-Yb-taH" secondAttribute="top" id="zLn-ar-eri"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8Mi-IQ-TR0"/>
+            <size key="customSize" width="392" height="50"/>
+            <connections>
+                <outlet property="Ficons" destination="jGy-WS-rf1" id="hwL-LS-pkn"/>
+                <outlet property="Fname" destination="EKL-1p-p80" id="IPh-qR-cNV"/>
+                <outlet property="cardView" destination="biC-gy-kLG" id="yUn-t1-wOu"/>
+                <outlet property="widthConstraint" destination="Y8z-Ym-eGo" id="f8a-0M-YGf"/>
+            </connections>
+            <point key="canvasLocation" x="175" y="-97"/>
+        </collectionViewCell>
+    </objects>
+</document>
